@@ -515,5 +515,23 @@ await browserbase.closeSession();`,
     apiKeyUrl: 'https://www.browserbase.com/settings',
     websiteUrl: 'https://www.browserbase.com',
     npmUrl: 'https://www.npmjs.com/package/@browserbasehq/ai-sdk',
+  }
+  ,
+  {
+        slug: 'supraswall',
+        name: 'SupraWall',
+        description:
+                'Enterprise-grade security middleware for AI agents. Protects against prompt injection, data exfiltration, and unauthorized tool execution.',
+        packageName: '@supraswall/sdk',
+        tags: ['security', 'guardrails', 'shield', 'enterprise'],
+        apiKeyEnvName: 'SUPRASWALL_API_KEY',
+        installCommand: {
+                pnpm: 'pnpm add @supraswall/sdk',
+                npm: 'npm install @supraswall/sdk',
+                yarn: 'yarn add @supraswall/sdk',
+                bun: 'bun add @supraswall/sdk',
+        },
+          codeExample: "import { SupraWall } from '@supraswall/sdk';",
+        websiteUrl: 'https://github.com/wiserautomation/SupraWall',
   },
-];
+  ];
